@@ -1,0 +1,64 @@
+/*  stylesheet  */
+
+
+		body {
+			text-align: center; 
+			font-family: "나눔바른고딕"; 
+			margin: 50px auto 50px auto;
+			/*  margin/pading: top right bottom left (시계방향)  */
+		}
+		h1,h2,h3{
+			font-family: "나눔스퀘어";
+		}
+		form {
+			text-align:center;
+		}
+		hr {
+			width:50%; 
+			border-width:1px; 
+			border-style:dotted;  
+			border-color:white;
+			background-color:lemonchiffon; 
+			text-align:center; 
+			margin-top: 30px; 
+			margin-bottom: 30px
+		}
+		table {
+			text-align:center;
+			color:#000000;
+			border-style:solid;
+			border: 1;
+			border-color: blanchedalmond;
+		}
+		tr, td {
+			text-align:center;
+			padding: 20px 20px 20px 20px;
+			background-color: white;
+		}
+		div {
+			text-align: center;
+			padding: 20px 20px 20px 20px;
+		}
+		.button {
+			width:13%; 
+			height:50px;
+			background-color: lightpink; color:white;
+			margin:20px 10px 20px 10px;
+			font-style:initial;
+			font-size:auto;
+			text-shadow: 2px 2px 5px lightcoral;
+			text-align:center;
+			border-style:inherit;
+			border-radius:20px 20px 20px 20px;
+  			transition:width .5s ease;
+		}
+		.button:hover {
+			background-color:honeydew; color:lightpink;
+			font-size:large;
+  			transition:width .5s ease;
+		}
+		input {
+			padding-left:5px;
+			padding-right:5px;
+		}
+
