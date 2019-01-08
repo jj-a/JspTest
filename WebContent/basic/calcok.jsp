@@ -32,7 +32,7 @@
 	
 	<!-- 출력 -->
 	
-	<table width=100px border="1">
+	<table border="1">
 		<tr>
 			<td><%=num1%></td>
 			<td><%=op%></td>
