@@ -3,7 +3,8 @@
 
 		body {
 			text-align: center; 
-			font-family: "나눔바른고딕"; 
+			font-family: "나눔바른고딕";
+			font-size: 10pt; 
 			margin: 50px auto 50px auto;
 			/*  margin/pading: top right bottom left (시계방향)  */
 		}
@@ -24,16 +25,37 @@
 			margin-bottom: 30px
 		}
 		table {
+			width: 70%;
 			text-align:center;
+			margin: auto;
 			color:#000000;
 			border-style:solid;
-			border: 1;
+			border-width: 1px;
 			border-color: blanchedalmond;
 		}
-		tr, td {
+		tr, td, th {
 			text-align:center;
-			padding: 20px 20px 20px 20px;
+			padding: 10px 10px 10px 10px;
+			margin: auto;
+			border-top: 0;
+			border-right: 0;
+			border-bottom: 1px solid;
+			border-left: 1px solid;
+			border-color: #ffccbb;
 			background-color: white;
+		}
+
+		td{
+			background-color: #fff9e7e5;
+		}
+
+		td:hover{
+			background-color: blanchedalmond;
+			cursor: default;
+		}
+
+		th{
+			background-color: #ffddcc;
 		}
 		div {
 			text-align: center;
@@ -60,5 +82,23 @@
 		input {
 			padding-left:5px;
 			padding-right:5px;
+		}
+		input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+			cursor: pointer;
+		}
+		a:link {
+			color: black;
+			font-style:normal;
+			text-decoration: none;
+		}
+		a:hover{
+			color: lightpink;
+			font-style:normal;
+			text-decoration: underline;
+		}
+		a:visited {
+			color: black;
+			font-style:normal;
+			text-decoration: none;
 		}
 

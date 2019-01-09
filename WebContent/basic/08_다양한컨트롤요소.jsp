@@ -45,6 +45,27 @@ td, th {
 				<th>숫자3</th>
 				<td><input type="text" name="num"></td>
 			</tr><tr>
+				<th>약관동의</th>
+				<td><input type="checkbox" name="agree" value="y"></td>
+			</tr><tr>
+				<th>성별</th>
+				<td><input type="radio" name="gender" value="f" checked>여 
+				<input type="radio" name="gender" value="m">남</td>
+			</tr>
+			<tr>
+				<th>통신회사</th>
+				<td><select name="telecom">
+						<option value="sk">SK
+						<option value="kt">KT
+						<option value="lg">LG U+
+				</select></td>
+			</tr><tr>
+				<td colspan=2><input type="hidden" name="pagenum" value="3"></td>
+			</tr><tr>
+				<!-- <form enctype="multipart/form-data"> 추가 -->
+				<th>첨부파일 :</th>
+				<td><input type="file" name="attach"></td>
+			</tr><tr>
 				<td colspan=2><input type="submit" value="전송"></td>
 			</tr>
 		</table>

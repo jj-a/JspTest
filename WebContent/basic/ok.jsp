@@ -18,6 +18,11 @@
 		String upw = request.getParameter("upw").trim();
 		String uname = request.getParameter("uname").trim();
 		String message = request.getParameter("message").trim();
+		String agree = request.getParameter("agree").trim();
+		String gender = request.getParameter("gender").trim();
+		String telecom = request.getParameter("telecom").trim();
+		String pagenum = request.getParameter("pagenum").trim();
+		String attach = request.getParameter("attach").trim();
 
 		// <textarea>에서 입력한 줄바꿈(Enter)을 <br>로 치환
 		message = message.replace("\n", "<br>");
@@ -53,6 +58,26 @@
 	<%
 	}
 	%>
+		<tr>
+			<td>약관동의:</td>
+			<td><%=agree%></td>
+		</tr><tr>
+			<td>성별:</td>
+			<td><%=gender%></td>
+		</tr><tr>
+			<td>통신사:</td>
+			<td><%=telecom%></td>
+		</tr><tr>
+			<td >페이지:</td>
+			<td><%=pagenum%></td>
+		</tr><tr>
+			<!--
+			실제 전송된 파일을 가져오려면 다른 방식으로 request 객체에 접근해야 함
+			request.getParameter("attach")는 파일 이름을 담고 있음
+			-->
+			<td >첨부파일명:</td>
+			<td><%=attach%></td>
+		</tr>
 	</table>
 
 </body>
