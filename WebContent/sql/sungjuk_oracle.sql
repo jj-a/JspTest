@@ -37,10 +37,21 @@ values(sungjuk_seq.nextval,'무궁화',40,50,20,'Seoul',sysdate);
 -- 2) 최대값 max()+1
 insert into sungjuk(sno,uname,kor,eng,mat,addr,wdate)
 values((select nvl(max(sno),0)+1 from sungjuk)
-       ,'박지성',44,55,66,'수원',sysdate);
+       ,'박지성',44,55,66,'Suwon',sysdate);
 
 -- 목록
 select * from sungjuk order by sno desc;
 
+-- 상세보기
+select * from sungjuk where sno=4;
+
+-- 수정
+update sungjuk
+set uname=?, kor=?, eng=?, mat=?, aver=?, addr=?
+where sno=4;
+
+-- 삭제
+delete from sungjuk
+where sno=4;
 
 

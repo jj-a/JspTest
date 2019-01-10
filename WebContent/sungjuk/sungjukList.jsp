@@ -48,7 +48,7 @@
 					do {
 		%>
 		<tr>
-			<td><%=rs.getString("uname")%></td>
+			<td><a href="sungjukRead.jsp?sno=<%=rs.getInt("sno")%>"><%=rs.getString("uname")%></a></td>
 			<td><%=rs.getInt("kor")%></td>
 			<td><%=rs.getInt("eng")%></td>
 			<td><%=rs.getInt("mat")%></td>
