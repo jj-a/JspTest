@@ -81,22 +81,25 @@
 
 	<%
 		} catch (Exception e) {
-			out.println("실패!!" + e);
+			out.println("에러 발생: " + e);
 		} finally {
 			try {
 				if (rs != null) rs.close();
 			} catch (Exception e) {
+				;
 			}
 			
 			try {
 				if (pstmt != null) pstmt.close();
 			} catch (Exception e) {
+				;
 			}
 			
 			try {
 				if (con != null) con.close();
 			} catch (Exception e) {
-			}
+				;
+			} 
 		} //try end
 			//--------------------------------------------------------
 	%>
