@@ -10,7 +10,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-<title>sungjukIns/sungjukIns.jsp</title>
+<title>sungjukbean/sungjukIns.jsp</title>
 <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
 <script src="../js/myscript.js"></script>
 </head>
