@@ -6,7 +6,10 @@
 <head>
 <meta charset="UTF-8">
 <title>sungjukbean/sungjukList.jsp</title>
+<!-- 
 <link rel="stylesheet" type="text/css" href="../css/mystyle.css">
+-->
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/mystyle.css?after" charset="utf-8"/>
 <script src="../js/myscript.js"></script>
 </head>
 <body>
